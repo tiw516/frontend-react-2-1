@@ -1,7 +1,6 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, Link } from "@chakra-ui/react";
 import router from "next/router";
 import React from "react";
-import Link from 'next/link';
 
 const Dashboard = () => {
   if (typeof window !== "undefined") {
@@ -23,7 +22,7 @@ const Dashboard = () => {
           <>
             {" "}
             <Box>Welcome，{user.name}</Box>
-            <Link href="http://localhost:8080/api/users/downloadCSV"><a>Download UserList</a></Link>
+            <Link isExternal href="http://localhost:8080/api/users/downloadCSV"><a>Download UserList</a></Link>
             <Button
               onClick={() => {
                 logOut();

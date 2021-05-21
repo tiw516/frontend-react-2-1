@@ -25,8 +25,8 @@ export default function Home() {
     let storage = window.localStorage;
 
     let login = () => {
-      // 发送 POST 请求
-      // test@gmail.com
+      // Post method
+      // test@gmail.com / 123
 
       axios({
         method: "post",
